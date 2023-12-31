@@ -1,33 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
 	<nodes>
-		<cpt id="Node1">
-			<state id="State0" />
-			<state id="State1" />
-			<probabilities>0.5 0.5</probabilities>
+		<cpt id="Toxicity">
+			<state id="non_toxic" />
+			<state id="toxic" />
+			<probabilities>0.8789248932421534 0.1210751067578467</probabilities>
 		</cpt>
-		<cpt id="Node2">
+		<cpt id="col_1">
 			<state id="State0" />
 			<state id="State1" />
-			<parents>Node1</parents>
+			<parents>Toxicity</parents>
+			<probabilities>0.4995716123061029 0.5004283876938971 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="col_2">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Toxicity</parents>
+			<probabilities>0.4988582044082981 0.5011417955917018 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="col_3">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Toxicity</parents>
+			<probabilities>0.5 0.5 0.5010351955757276 0.4989648044242724</probabilities>
+		</cpt>
+		<cpt id="col_4">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Toxicity</parents>
+			<probabilities>0.4998571632740175 0.5001428367259826 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="col_6">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Toxicity</parents>
+			<probabilities>0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="col_5">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>Toxicity</parents>
 			<probabilities>0.5 0.5 0.5 0.5</probabilities>
 		</cpt>
 	</nodes>
 	<extensions>
-		<genie version="1.0" app="GeNIe 4.0.2218.1 1d8e33b8ae0e600" name="Network2">
-			<node id="Node1">
-				<name>Node1</name>
+		<genie version="1.0" app="GeNIe 4.0.2218.1 1d8e33b8ae0e600" name="LukeSandbox">
+			<node id="Toxicity">
+				<name>Toxicity</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>277 154 400 209</position>
+				<position>483 95 646 196</position>
+				<barchart active="true" />
 			</node>
-			<node id="Node2">
-				<name>Node2</name>
+			<node id="col_1">
+				<name>col_1</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000000" name="Arial" size="8" />
-				<position>582 157 687 212</position>
+				<position>97 324 230 404</position>
+			</node>
+			<node id="col_2">
+				<name>col_2</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>254 322 378 403</position>
+			</node>
+			<node id="col_3">
+				<name>col_3</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>436 329 561 400</position>
+			</node>
+			<node id="col_4">
+				<name>col_4</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>605 334 723 403</position>
+			</node>
+			<node id="col_6">
+				<name>col_6</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>958 354 1086 423</position>
+			</node>
+			<node id="col_5">
+				<name>col_5</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>751 350 882 412</position>
 			</node>
 		</genie>
 	</extensions>
